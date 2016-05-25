@@ -1,11 +1,16 @@
 'use strict';
 
+const Path = require('path');
+const HapiReactViews = require('hapi-react-views');
+
 module.exports = {
-    engines: { 'hbs': require('handlebars') },
+    engines: {
+        'jsx': HapiReactViews
+    },
     relativeTo: __dirname,
     path: './templates',
-    layout: true,
-    layoutPath: './templates/layout',
-    partialsPath: './templates/partials',
-    helpersPath: './templates/helpers'
+    compileOptions: {
+        layoutPath: Path.join(__dirname, 'templates/layout'),
+        layout: 'layout'
+    }
 };

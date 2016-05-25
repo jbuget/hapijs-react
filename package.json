@@ -46,7 +46,6 @@
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
-    "handlebars": "^4.0.5",
     "jquery": "^2.2.4",
     "mocha": "^2.5.1",
     "node-sass": "^3.7.0",
