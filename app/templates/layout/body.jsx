@@ -14,9 +14,7 @@ const Component = React.createClass({
 
                 <Header />
 
-                <main>
-                  {this.props.children}
-                </main>
+                <main dangerouslySetInnerHTML={{ __html: this.props.children }}></main>
 
                 <Footer />
 

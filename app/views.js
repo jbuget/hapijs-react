@@ -10,6 +10,7 @@ module.exports = {
     relativeTo: __dirname,
     path: './templates',
     compileOptions: {
+        renderMethod: 'renderToString',
         layoutPath: Path.join(__dirname, 'templates/layout'),
         layout: 'layout'
     }
