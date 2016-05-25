@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node app/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/babel-cli/bin/babel app -d dist/app && node ./node_modules/babel-cli/bin/babel server -d dist/server && node ./node_modules/babel-cli/bin/babel server.js -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,15 +25,34 @@
     "good": "^7.0.1",
     "good-console": "^6.1.1",
     "good-squeeze": "^3.0.1",
+    "h2o2": "^5.1.0",
     "hapi": "^13.4.1",
+    "hapi-react-views": "^8.0.0",
+    "hoek": "^4.0.0",
     "inert": "^4.0.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "vision": "^4.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "bootstrap": "^4.0.0-alpha.2",
+    "bootstrap-loader": "^1.0.10",
+    "bootstrap-sass": "^3.3.6",
     "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "jquery": "^2.2.4",
     "mocha": "^2.5.1",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "postcss-loader": "^0.9.1",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.2.0",
     "sinon": "^1.17.4",
-    "webpack": "^1.13.1"
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

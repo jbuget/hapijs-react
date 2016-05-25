@@ -1,3 +1,7 @@
+require('jquery');
+require('bootstrap');
+require('../../node_modules/bootstrap/dist/css/bootstrap.css');
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
