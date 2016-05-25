@@ -37,7 +37,8 @@ var config = {
     module: {
 
         loaders: [
-            { test: /\.js$/, loader: 'babel', exclude: [nodeModulesPath] },
+            // Babel transpilation for JS and JSX files
+            { test: /\.js?$/, loader: 'babel', exclude: [nodeModulesPath] },
 
             // For managing CSS and small images resources
             { test: /\.css$/, loader: "style-loader!css-loader" },
