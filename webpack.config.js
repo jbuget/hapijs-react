@@ -51,7 +51,14 @@ var config = {
         ]
     },
     plugins: [
-        new Webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
+        new Webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js"),
+
+        // jQuery is required by Bootstrap, see https://webpack.github.io/docs/list-of-plugins.html
+        new Webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
     ]
 };
 
