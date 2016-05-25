@@ -10,7 +10,7 @@ const Component = React.createClass({
 
         return (
             <html lang="fr">
-                <Head title="{this.props.title}" />
+                <Head title={this.props.title} />
                 <Body {...this.props} />
             </html>
         );
